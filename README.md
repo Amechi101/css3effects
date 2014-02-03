@@ -1,2 +1,2 @@
-css3effects
+CSS3 Effects 'N Stuff
 ===========
