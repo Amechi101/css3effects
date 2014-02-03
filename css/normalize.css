@@ -1,15 +1,9 @@
-/**
-<<<<<<< HEAD
+/*
 * html5doctor.com Reset Stylesheet v1.6.1 (http://html5doctor.com/html-5-reset-stylesheet/)
 * Richard Clark (http://richclarkdesign.com)
 * http://cssreset.com
 */
-=======
- * html5doctor.com Reset Stylesheet v1.6.1 (http://html5doctor.com/html-5-reset-stylesheet/)
- * Richard Clark (http://richclarkdesign.com)
- * http://cssreset.com
- */
->>>>>>> 41b67f77d54ea17f12b948f72b3bb201a64f5bbb
+
 html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,
 strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,
 canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video {
@@ -25,22 +19,13 @@ canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,t
 body {
   line-height: 1;
   padding: 0;
-<<<<<<< HEAD
-  margin-top: 0px;
-  /*background:-webkit-linear-gradient(300deg, #0d1a26 50%, #31689b 0%);
-background:-ms-linear-gradient(300deg, #0d1a26 50%, #31689b 0%);
-background:-moz-linear-gradient(300deg, #0d1a26 50%, #31689b 0%);
-background:-o-linear-gradient(300deg, #0d1a26 50%, #31689b 0%);
-background:linear-gradient(300deg, #0d1a26 50%, #31689b 0%);*/
-=======
   margin-top: 0px; 
   /*background:-webkit-linear-gradient(300deg, #0d1a26 50%, #31689b 0%);
    background:-ms-linear-gradient(300deg, #0d1a26 50%, #31689b 0%);
    background:-moz-linear-gradient(300deg, #0d1a26 50%, #31689b 0%);
    background:-o-linear-gradient(300deg, #0d1a26 50%, #31689b 0%);
    background:linear-gradient(300deg, #0d1a26 50%, #31689b 0%);*/
->>>>>>> 41b67f77d54ea17f12b948f72b3bb201a64f5bbb
-    background:#0d1a26;
+  background:#0d1a26;
 }
 
 article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
@@ -113,9 +98,4 @@ input,select {
 
 img {
   max-width: 100%;
-<<<<<<< HEAD
 }
-=======
-}
-
->>>>>>> 41b67f77d54ea17f12b948f72b3bb201a64f5bbb
