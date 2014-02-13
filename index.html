@@ -2,257 +2,23 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title></title>
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <title>CSS Effects 'N Stuff</title>
+    <meta name="description" content="A page filled with different CSS effects">
+    <meta name="author" content="Amechi Egbe">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">  
   <!--   CSS LINKS -->
   
     <!--  CSS for Icons  -->
     <link rel="stylesheet" type="text/css" href="icons-portfolio/foundation-icons/foundation-icons.css">
-    <link rel="stylesheet" type="text/css" href="css/subIconStyle.css">
     
     <!--  CSS for resets  -->
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
 
 
     <!--  CSS for other styles  -->
-    <link rel="stylesheet" type="text/css" href="css/effects.css">
+    <link rel="stylesheet" type="text/css" href="css/components.css">
     <link rel="stylesheet" type="text/css" href="fonts/font.css">
-      
-  <style type="text/css">
-
-
-*,*:after,*::before {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -ms-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-
-.wrap {
-padding: 30px 0 0 10px;
-}
-
-
-
-.mainHeadNav {
-  text-decoration: none; 
-  position: absolute;
-  z-index: 100;
-   top: 10px;
-  text-align:center;
-  left:0;
-  right:0;
-  max-width: 100%;
-}
-
-
-.mainHeadNav {
-  font-family: "satellite";
-  font-weight: 400;
-  font-style: normal;
-  font-size: 2.2em;
-  color: rgb(255,255,255);
-  letter-spacing:1px;
-}
-
-
-
-
-/*************  general info for grid area and box style *************/
-.grid_main {
-  padding:0;
-  margin:0;
-  list-style: none;
-  text-align: center;
-}
-
-
-.grid_main .boxFeatures {
-  float: left;
-  position: relative;
-  top: 70px;
-  width: 230px;
-  height: 230px;
-  margin: 0px 5% 0.3% 0px;
-  overflow: hidden;
-}
-
-
-
-
-/*************  (Menu Settings) first box  *************/
-
- 
-
-.user_photo_container {
-margin-top:170px;
-}
-
-
-
-.grid_main .user_photo_container figcaption {
-  padding-bottom: 50px;
-}
-
-.grid_main .user_name span {
-  color: rgb(0,0,0);
-  font-family: "satellite";
-  font-weight: 400;
-  font-style: normal;
-  font-size: 1.8em;
-}
-
-.grid_main .user_inner li {
-  position: relative;
-  top: -215px;
-  padding: 32px 0 0 0;
-  background: rgb(255,255,255);
-  list-style: none;
-}
-
-.grid_main .user_inner li a {
-  text-decoration: none;
-  color: rgb(0,0,0);
-  font-family: "satellite";
-  font-weight: 400;
-  font-style: normal;
-  font-size: 15px;
-  position:relative;
-  bottom:12px;
-}
-
-.grid_main .user_inner {
-  height: 100%;
-  width: 100%;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-  filter: alpha(opacity=0);
-  opacity: 0;
-
-  -webkit-transform: scale(0.8);
-  -moz-transform: scale(0.8);
-  -o-transform: scale(0.8);
-  -ms-transform: scale(0.8);
-  transform: scale(0.8);
-  
-  backface-visibility: hidden;
-   transition: transform 0.4s, opacity 0.4s;
-  -webkit-transition: -webkit-transform 0.4s, opacity 0.4s; 
-}
-
-
-.grid_main .user_inner:hover {
-  -webkit-transform: scale(1);
-  -moz-transform: scale(1);
-  -o-transform: scale(1);
-  -ms-transform: scale(1);
-  transform: scale(1);
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
-  filter: alpha(opacity=100);
-  opacity: 1;
-}
-
-.grid_main .user_inner a:hover {
-  color: rgb(18, 194, 134);
-
-  -webkit-transition: color 0.3s ease-in;
-  -moz-transition: color 0.3s ease-in;
-  -o-transition: color 0.3s ease-in;
-  -ms-transition: color 0.3s ease-in;
-  transition: color 0.3s ease-in;
-}
-
-/********************** Inner Box's Settings (Not Including First Box) ****************/
-
-.boxFeatures .inspire {
-width:100%;
-height:100%;
-overflow:hidden;
-}
-
-.boxFeatures a {
-text-decoration:none;
-}
-
-
- .boxFeatures .inspire h2 {
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 95px;
-  font-family: "satellite",sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 1.8em;
-}
-
-
-/*********  Dashoboard ****************/
-
-#Dashboard {
-background:rgba(0,0,0,0.9);
-position:fixed;
-margin:0 auto;
-padding:0;
-width:50%;
-height:55%;
-overflow: hidden;
-z-index:3000;
-color: rgb(255,255,255);
-border-top:1px solid rgb(255,255,255);
-border-left:1px solid rgb(255,255,255);
-border-right:1px solid rgb(255,255,255);
-}
-#Dashboard {
-top:520px; /* For Javascript to allow for the hover */
-transition:top 2s, border-top 2s, border-left 2s, border-right 2s ;
-left:0;
-right:0;
-}
-
-#Dashboard:hover {
-top: 200px !important;
-border-top:1px solid rgb(18, 194, 134);
-border-left:1px solid rgb(18, 194, 134);
-border-right:1px solid rgb(18, 194, 134);
-}
-
-
-#Dashboard .dashTitle {
-color: rgb(255, 255, 255);
-  font-weight: 300;
-  font-size: 2.5em;
-text-align:center;
- text-transform:uppercase;
-  padding:20px;
-}
-
-#Dashboard p {
-font-weight: 400;
-color:rgb(255, 255, 255);
-font-size: 1.0em;
-text-align:center;
-line-height:2;
- word-spacing:3px;
-}
-
-
-.dashInner, .dashInnerAdd, .dashTitle {
-font-family: "satellite",sans-serif;
-font-style: normal;
- position:relative;
-}
- .dashInnerAdd {
-  border-top:rgb(18, 194, 134) 1px solid;
-  }
-
-    
-
-    
-</style>
-  
+        
   </head>
     <body>
 
@@ -278,11 +44,12 @@ font-style: normal;
               <span>Menu</span>
             </figcaption>
           </figure>
-          <ul class="user_inner">
+          <ul class="user_inner" id="main-dash">
             <li><a href="https://amechi-egbe.squarespace.com/css3-effects">Back to Portfolio<i class="fi-photo"></i></a></li> 
             <li><a  href="https://www.facebook.com/amechi.egbe">Facebook<i class="fi-social-facebook"></i></a></li>  
             <li><a href="https://twitter.com/FashionIdealist">Twitter<i class="fi-social-twitter"></i></a></li> 
             <li><a href="http://instagram.com/fashion_idealist">Instagram<i class="fi-social-instagram"></i></a></li>
+            <li><a href="Dashboard">Dashboard<i class="fi-page"></i></a></li>
           </ul>
         </div>
         </section>
@@ -294,19 +61,24 @@ font-style: normal;
           </div>
         </section>
    
-
- 
         <section class="boxFeatures box2">
             <div class="inspire">
               <h2>Hover & Scale</h2> 
             </div>
         </section>
     
-        <!--  <section class="boxFeatures box3">
+        <section class="boxFeatures box3">
+            <div class="inspire">
+              <h2>Sideways Flip</h2>  
+            </div>
+        </section>
+
+        <!-- <section class="boxFeatures box4">
             <div class="inspire">
               <h2>3D</h2>  
             </div>
         </section> -->
+
 
  <!-- Dashboard start -->
       <div id="Dashboard"> 
