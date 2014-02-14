@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="no-js">
   <head>
     <meta charset="utf-8">
     <title>CSS Effects 'N Stuff</title>
@@ -18,7 +18,16 @@
     <!--  CSS for other styles  -->
     <link rel="stylesheet" type="text/css" href="css/components.css">
     <link rel="stylesheet" type="text/css" href="fonts/font.css">
+
+    <!--*****Need JS Libraries in head ************ -->
+    <script src="js/modernizr.custom.38675.js"></script>
         
+    <!--
+    This script enables structural HTML5 elements in old IE.
+    http://code.google.com/p/html5shim/ -->
+    <!--[if lt IE 9]>
+    <script src = "//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->    
   </head>
     <body>
 
@@ -38,7 +47,7 @@
     
           <!-- grid -->
       <main class="grid_main">  
-        <section class="boxFeatures userBox">
+        <section class="userBox">
         <div>
           <figure class="user_photo_container">
             <figcaption class="user_name">
@@ -104,7 +113,7 @@
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
   
-    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript">
       $(function() {
         $('#Dashboard').height($(document).height());
