@@ -7,17 +7,12 @@
     <meta name="author" content="Amechi Egbe">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">  
   <!--   CSS LINKS -->
-  
     <!--  CSS for Icons  -->
     <link rel="stylesheet" type="text/css" href="icons-portfolio/foundation-icons/foundation-icons.css">
-    
     <!--  CSS for resets  -->
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
-
-
     <!--  CSS for other styles  -->
     <link rel="stylesheet" type="text/css" href="css/components.css">
-    <link rel="stylesheet" type="text/css" href="fonts/font.css">
 
     <!--*****Need JS Libraries in head ************ -->
     <script src="js/modernizr.custom.38675.js"></script>
@@ -30,22 +25,17 @@
     <![endif]-->    
   </head>
     <body>
-
-
+    
     <!-- Part 1: Wrap all page content here -->
-    <div class="wrap">
-
- 
-      
+    <div class="wrap"> 
       <header>
         <div>
           <h1 class="mainHeadNav">CSS3 Effects 'N Stuff</h1>
         </div>
         <a href="https://github.com/Amechi101/css3effects"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_green_007200.png" alt="Fork me on GitHub"></a>
       </header> 
-      
     
-          <!-- grid -->
+      <!-- grid -->
       <main class="grid_main">  
         <section class="userBox">
         <div>
@@ -59,12 +49,11 @@
             <li><a  href="https://www.facebook.com/amechi.egbe">Facebook<i class="fi-social-facebook"></i></a></li>  
             <li><a href="https://twitter.com/FashionIdealist">Twitter<i class="fi-social-twitter"></i></a></li> 
             <li><a href="http://instagram.com/fashion_idealist">Instagram<i class="fi-social-instagram"></i></a></li>
-            <li><a href="Dashboard">Dashboard<i class="fi-page"></i></a></li>
+            <li><a id="dashClick" href="#">Dashboard<i class="fi-page"></i></a></li>
           </ul>
         </div>
         </section>
-        
-       
+         
         <section class="boxFeatures box1">
           <div   class="inspire">
             <h2>Transition</h2> 
@@ -89,36 +78,23 @@
             </div>
         </section> -->
 
-
- <!-- Dashboard start -->
-      <div id="Dashboard"> 
-        <h2 class="dashTitle">Project Information</h2>
+      <!-- Dashboard start -->
+        <div id="Dashboard"> 
+          <h2 class="dashTitle">Project Information</h2>
           <div class="dashInnerAdd">
-          <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
-         
-          </div>
-         
-      </div>
-
+            <p>
+              Welcome to CSS transitions! Currently I adding more features and effects to the project but feel free to fork over the respository and contribute!
+            </p> 
+          </div> 
+        </div>
       </main>  <!-- end grid main-->
-      
-     
-
-
     </div> <!--end wrap -->
 
-     
-
-       <!-- Le javascript
+    <!-- Le javascript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-  
     <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript">
-      $(function() {
-        $('#Dashboard').height($(document).height());
-      });
-    </script>
+    <script src="js/application.js"></script>
 
   </body>
 </html>
