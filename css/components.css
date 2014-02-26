@@ -199,6 +199,14 @@ amechiegbe@gmail.com
   word-spacing: 3px;
 }
 
+ #Dashboard a{
+  font-weight: 400;
+  color: rgb(18, 194, 134);
+  font-size: 1.2em;
+  
+  word-spacing: 3px;
+ } 
+
 .dashInner,.dashInnerAdd,.dashTitle {
   position: relative;
 }
