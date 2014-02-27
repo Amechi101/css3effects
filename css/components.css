@@ -476,7 +476,7 @@ amechiegbe@gmail.com
 }
 
 
-/*.grid_main .box4 {
+.grid_main .box4 {
   backface-visibility: visible;
   perspective: 500px;
   perspective-origin: (57% 5%);
@@ -494,14 +494,13 @@ amechiegbe@gmail.com
 }
 
 .grid_main .box4:hover { 
-
- -webkit-transform: rotate3d(0, 90, 0,200deg);
-  -moz-transform: rotate3d(0, 90, 0,200deg);
-  -o-transform: rotate3d(0, 90, 0,200deg);
-  -ms-transform: rotate3d(0, 90, 0,200deg);
-  transform: rotate3d(0, 90, 0,200deg);
+  -webkit-transform: rotate3d(0, 90, 0,200deg) rotate3d(0, 0, 90,20deg) rotate3d(90, 0, 0,200deg);
+  -moz-transform: rotate3d(0, 90, 0,200deg) rotate3d(0, 0, 90,20deg) rotate3d(90, 0, 0,200deg);
+  -o-transform: rotate3d(0, 90, 0,200deg) rotate3d(0, 0, 90,20deg) rotate3d(90, 0, 0,200deg);
+  -ms-transform: rotate3d(0, 90, 0,200deg) rotate3d(0, 0, 90,20deg) rotate3d(90, 0, 0,200deg);
+  transform: rotate3d(0, 90, 0,200deg) rotate3d(0, 0, 90,20deg) rotate3d(90, 0, 0,200deg);
 }
-*/
+
 
 /* Icon Styles */
 .userBox .user_inner .fi-photo,.fi-social-facebook,.fi-social-instagram,.fi-social-twitter,.fi-page {
