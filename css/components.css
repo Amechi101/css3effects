@@ -155,6 +155,9 @@ amechiegbe@gmail.com
 #Dashboard {
   background: rgba(0,0,0,0.9);
   position: fixed;
+  left: 0;
+  right: 0;
+  bottom: -600px;
   margin: 0 auto;
   padding: 0;
   width: 50%;
@@ -172,8 +175,6 @@ amechiegbe@gmail.com
   -o-transition: top 2s, border-top 2s, border-left 2s, border-right 2s;
   -ms-transition: top 2s, border-top 2s, border-left 2s, border-right 2s;
   transition: top 2s, border-top 2s, border-left 2s, border-right 2s;
-  left: 0;
-  right: 0;
 }
 
 #Dashboard:hover {
@@ -215,6 +216,10 @@ amechiegbe@gmail.com
   border-top: rgb(18, 194, 134) 1px solid;
 }
 
+.dashInnerAdd p {
+  letter-spacing: 1px;
+}
+
 /***************** Box Effects *******************************/
 .grid_main .boxFeatures::after {
   content: '';
@@ -225,10 +230,10 @@ amechiegbe@gmail.com
   bottom: 120px;
   background: rgba(44, 62, 80,0.9);
 
-  -webkit-transform: matrix(1,-2,-3,4,0,0);
-  -moz-transform: matrix(1,-2,-3,4,0,0);
-  -o-transform: matrix(1,-2,-3,4,0,0);
-  -ms-transform: matrix(1,-2,-3,4,0,0);
+  -webkit-transform: matrix(1,0,-3,4,0,50);
+  -moz-transform: matrix(1,0,-3,4,0,50);
+  -o-transform: matrix(1,0,-3,4,0,50);
+  -ms-transform: matrix(1,0,-3,4,0,50);
   transform: matrix(1,0,-3,4,0,50);
   z-index: 0;
 
@@ -316,14 +321,14 @@ amechiegbe@gmail.com
   background: rgb(243, 156, 18);
 
 
-  -webkit-transform: matrix(1,-4,-3,4,0,0);
-  -moz-transform: matrix(1,-4,-3,4,0,0);
-  -o-transform: matrix(1,-4,-3,4,0,0);
-  -ms-transform: matrix(1,-4,-3,4,0,0);
+  -webkit-transform: matrix(1,-6,-3,4,0,100);
+  -moz-transform: matrix(1,-6,-3,4,0,100);
+  -o-transform: matrix(1,-6,-3,4,0,100);
+  -ms-transform: matrix(1,-6,-3,4,0,100);
   transform: matrix(1,-6,-3,4,0,100);
   z-index: 0;
 
-  -webkit-transition: background 2s, animation 2s;
+  -webkit-transition: background 2s, -webkit-animation 2s;
   -moz-transition: background 2s, animation 2s;
   -o-transition: background 2s, animation 2s;
   -ms-transition: background 2s, animation 2s;
@@ -331,6 +336,7 @@ amechiegbe@gmail.com
 }
 
 .grid_main .boxFeatures:hover::before {
+   background: rgb(44, 62, 80); /*Fall Back */
   background: rgba(44, 62, 80,0.4);
 
   -webkit-animation-name: open-up-lower;

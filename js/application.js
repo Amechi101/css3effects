@@ -5,39 +5,41 @@ CSS3 Effects 'N Stuff
 
 Made by Amechi Egbe
 
-www..com/animations/
+http://amechi101.github.io/css3effects/
 
 Questions, comments, concerns, love letters:
 amechiegbe@gmail.com
 ==============================================
 */
 
-
-
 "use strict";
 
+
 $(function() {
+    //Modernizer Test
+    Modernizr.addTest("keyframe", Modernizr.testAllProps('animationName'));
+    Modernizr.prefixed('requestAnimationFrame', window, true);
+
     // global functions
     var dash = $('#Dashboard');
     var dashBtn = $('#dashClick');
-    var clicked = false;
+    var clicked = true;
 
-    var state = dash.css({"top":600});
+    dashBtn.on('click',function() {
 
-    dashBtn.on('click',function(e) {
-        e.preventDefault();
-
-        if(clicked === true) {
+        if(clicked == true) {
+            dash.animate({"top":0}, 400, 'linear', function () {
+                console.log('Up');
+            });
             clicked = false;
-            dash.animate({"top":0});
-        } 
-
-        else {
+        } else {
+            dash.animate({"top":600}, 400, function () {
+                console.log('Down');
+            });
             clicked = true;
-            dash.animate({"top":600});
         }
     });
     
     //make it height of document
-    dash.height($(document).height()); 
+    
 });
