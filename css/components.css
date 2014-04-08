@@ -16,6 +16,8 @@ amechiegbe@gmail.com
     font-family: "satellite";
     src: url('../fonts/SatelliteCopy.otf'),
     url('../fonts/SatelliteCopy.otf'); /* IE */
+    font-style:normal;
+    font-weight:normal;
 }
 
 
@@ -44,7 +46,7 @@ amechiegbe@gmail.com
 
 /*************  general info for grid area and box style *************/
 .grid_main {
-  padding: 0;
+  padding: 10px;
   margin: 0;
   list-style: none;
   text-align: center;
@@ -56,11 +58,12 @@ amechiegbe@gmail.com
   top: 70px;
   width: 200px;
   height: 200px;
-  margin: 0px 3% 0.3% 0px;
+  margin: 0px 3% 2% 0px;
   overflow: hidden;
   background: rgb(255,255,255);
   color: rgb(0,0,0);
 }
+
 
 /*************  (Menu Settings) first box  *************/
 .user_photo_container {
@@ -505,6 +508,91 @@ amechiegbe@gmail.com
   -o-transform: rotate3d(0, 90, 0,200deg) rotate3d(0, 0, 90,20deg) rotate3d(90, 0, 0,200deg);
   -ms-transform: rotate3d(0, 90, 0,200deg) rotate3d(0, 0, 90,20deg) rotate3d(90, 0, 0,200deg);
   transform: rotate3d(0, 90, 0,200deg) rotate3d(0, 0, 90,20deg) rotate3d(90, 0, 0,200deg);
+}
+
+.grid_main  .box5 {
+  -webkit-transition: -webkit-transform 2s;
+  -mos-transition: -mos-transform 2s;
+  -o-transition: -o-transform 2s;
+  transition: transform 2s;  
+}
+
+
+.grid_main  .box5:hover {
+  -webkit-animation-name: spin;
+  -moz-animation-name: spin;
+  -ms-animation-name: spin;
+  -o-animation-name: spin;
+   
+   -webkit-animation-duration:500ms;
+  -moz-animation-duration:500ms;
+  -ms-animation-duration: 500ms;
+  -o-animation-duration: 500ms;
+ 
+  -webkit-animation-iteration-count:infinite;
+  -moz-animation-iteration-count:infinite;
+  -ms-animation-iteration-count:infinite;
+   -o-animation-iteration-count:infinite;
+
+  animation-name: spin;
+  animation-duration: 500ms;
+  animation-iteration-count:infinite;
+  
+  
+}
+
+ 
+@-moz-keyframes spin {
+ 100%{
+  -webkit-transform:rotateZ(360deg);
+   transform:rotateZ(360deg);
+   -moz-transform:rotateZ(360deg);
+    -ms-transform:rotateZ(360deg);
+     -o-transform:rotateZ(360deg);
+ }
+
+}
+
+@-webkit-keyframes spin {
+ 100%{
+   -webkit-transform:rotateZ(360deg);
+   transform:rotateZ(360deg);
+   -moz-transform:rotateZ(360deg);
+    -ms-transform:rotateZ(360deg);
+     -o-transform:rotateZ(360deg);
+ }
+
+}
+@-ms-keyframes spin {
+ 100%{
+  -webkit-transform:rotateZ(360deg);
+   transform:rotateZ(360deg);
+   -moz-transform:rotateZ(360deg);
+    -ms-transform:rotateZ(360deg);
+     -o-transform:rotateZ(360deg);
+ }
+
+}
+
+@-o-keyframes spin {
+ 100%{
+  -webkit-transform:rotateZ(360deg);
+   transform:rotateZ(360deg);
+   -moz-transform:rotateZ(360deg);
+    -ms-transform:rotateZ(360deg);
+     -o-transform:rotateZ(360deg);
+ }
+
+}
+
+@keyframes spin {
+ 100%{
+  -webkit-transform:rotateZ(360deg);
+   transform:rotateZ(360deg);
+   -moz-transform:rotateZ(360deg);
+    -ms-transform:rotateZ(360deg);
+     -o-transform:rotateZ(360deg);
+     }
 }
 
 
